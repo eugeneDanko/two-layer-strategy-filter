@@ -1,0 +1,14 @@
+{
+  "source_file": "./data\\dfs_5min.pickle",
+  "source_size_bytes": 1458525408,
+  "audit_dir": "./data\\coverage_audit_dfs_5min",
+  "markets": 35,
+  "market_rows": 35,
+  "symbol_rows": 3341,
+  "saved_files": [
+    "01_market_coverage.csv",
+    "02_symbol_coverage.csv",
+    "03_contract_count_summary.csv",
+    "04_candidate_markets.csv"
+  ]
+}

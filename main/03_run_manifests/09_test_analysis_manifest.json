@@ -1,0 +1,40 @@
+{
+  "test_dir": "D:\\Filter_2_option_v2\\08_test_run_output",
+  "analysis_dir": "D:\\Filter_2_option_v2\\09_test_analysis_output",
+  "n_strategies": 664,
+  "n_positive": 496,
+  "n_improved_vs_core": 210,
+  "n_instruments": 73,
+  "plots": [
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\plots\\01_portfolio_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\plots\\02_portfolio_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\plots\\03_core_cost_gap.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\all_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\all_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\top_50_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\top_50_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\top_100_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\top_100_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\without_zs_rs_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\without_zs_rs_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\two_option_only_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\two_option_only_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\core_only_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\core_only_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\positive_only_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\positive_only_drawdown.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\robust_positive_pnl.png",
+    "D:\\Filter_2_option_v2\\09_test_analysis_output\\diagnostic_portfolios\\robust_positive_drawdown.png"
+  ],
+  "saved_files": [
+    "01_test_leaderboard.csv",
+    "02_test_group_summary.csv",
+    "03_test_instrument_summary.csv",
+    "04_test_instruments_usage_copy.csv",
+    "05_return_on_capital_scenarios.csv",
+    "06_portfolio_metrics.csv",
+    "07_test_paths_catalog_copy.csv",
+    "08_manifest.json",
+    "09_diagnostic_portfolios.csv"
+  ]
+}

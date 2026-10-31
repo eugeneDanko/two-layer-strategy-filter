@@ -1,0 +1,19 @@
+{
+  "input_file": "D:\\Filter_2_option_v2\\04_two_option_calibration_output\\03_calibrated_best_by_strategy.csv",
+  "n_ranked": 570,
+  "n_selected_for_fine": 230,
+  "n_selected_trend": 126,
+  "n_selected_mean_reversion": 104,
+  "n_mean_reversion_rescue": 6,
+  "n_selected_with_rescue": 236,
+  "select_fraction_per_group": 0.6,
+  "max_fine_per_group": {
+    "put/call": 120,
+    "call/call": 80,
+    "call/put": 80,
+    "put/put": 60,
+    "mean_reversion": 120
+  },
+  "max_rescue_mean_reversion": 120,
+  "output_dir": "D:\\Filter_2_option_v2\\05_select_for_fine_calibration_output"
+}

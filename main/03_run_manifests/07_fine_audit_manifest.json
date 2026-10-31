@@ -1,0 +1,25 @@
+{
+  "selected_file": "D:\\Filter_2_option_v2\\05_select_for_fine_calibration_output\\02d_selected_for_fine_with_rescue.csv",
+  "fine_output_dir": "D:\\Filter_2_option_v2\\06_fine_tuning_output",
+  "analysis_output_dir": "D:\\Filter_2_option_v2\\07_fine_tuning_analysis_output",
+  "n_selected": 236,
+  "n_unique_selected_spec_ids": 236,
+  "n_grid_rows": 181776,
+  "n_best_rows": 236,
+  "n_unique_best_spec_ids": 236,
+  "n_best_path_rows": 236,
+  "n_unique_best_path_spec_ids": 236,
+  "n_missing_best_spec_ids": 0,
+  "n_extra_best_spec_ids": 0,
+  "n_missing_best_path_spec_ids": 0,
+  "saved_files": [
+    "00_selected_input_snapshot.csv",
+    "01_batch_audit.csv",
+    "02_fine_tuning_leaderboard.csv",
+    "03_group_summary.csv",
+    "04_missing_best_spec_ids.csv",
+    "05_extra_best_spec_ids.csv",
+    "06_missing_best_path_spec_ids.csv",
+    "07_manifest.json"
+  ]
+}

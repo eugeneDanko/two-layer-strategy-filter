@@ -1,0 +1,19 @@
+{
+  "test_start": "2020-01-01 00:00:00",
+  "test_end": "2023-08-10 23:59:59",
+  "n_candidates": 664,
+  "n_tested": 664,
+  "n_errors": 0,
+  "n_two_option_improved": 236,
+  "n_self_sufficient_core": 428,
+  "n_merged_mean_reversion": 0,
+  "output_dir": "D:\\Filter_2_option_v2\\08_test_run_output",
+  "saved_files": [
+    "01_test_strategy_results.csv",
+    "02_test_strategy_paths_catalog.csv",
+    "03_test_portfolio_path.parquet",
+    "04_test_instruments_usage.csv",
+    "05_test_errors.csv",
+    "06_manifest.json"
+  ]
+}

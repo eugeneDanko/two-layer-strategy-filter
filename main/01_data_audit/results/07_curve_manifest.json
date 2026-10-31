@@ -1,0 +1,46 @@
+{
+  "source_file": "./data\\dfs_5min.pickle",
+  "candidate_markets_source": "./data\\coverage_audit_dfs_5min\\04_candidate_markets.csv",
+  "out_dir": "./data\\curve_availability_audit",
+  "markets_checked": [
+    "ZC",
+    "ZS",
+    "ZL",
+    "ZM",
+    "ZW",
+    "KE",
+    "RS",
+    "CL",
+    "HO",
+    "RB",
+    "NG",
+    "QA",
+    "LF",
+    "LE",
+    "GF",
+    "HE",
+    "SB",
+    "SW",
+    "CC",
+    "CA",
+    "E6",
+    "D6",
+    "B6",
+    "DX",
+    "A6",
+    "J6",
+    "S6",
+    "N6"
+  ],
+  "saved_files": [
+    "01_curve_availability_summary.csv",
+    "02_timestamp_contract_counts.parquet",
+    "03_front3_contract_panel.parquet",
+    "03_front3_contract_panel_sample.csv"
+  ],
+  "notes": [
+    "Availability is based on observed rows at the same Date, not on an external expiration calendar.",
+    "Expired contracts are not treated as missing; only simultaneously observed contracts are counted.",
+    "base_1/base_2/base_3 are inferred by sorting parsed Symbol contract month and year."
+  ]
+}

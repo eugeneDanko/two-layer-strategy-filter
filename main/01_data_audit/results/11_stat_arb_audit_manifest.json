@@ -1,0 +1,376 @@
+{
+  "source_file": "./data\\dfs_5min.pickle",
+  "protocol_file": "./data\\backtest_protocol.yaml",
+  "protocol": {
+    "splits": {
+      "train": {
+        "start": "2008-05-01",
+        "end": "2016-12-31 23:59:59"
+      },
+      "calibration": {
+        "start": "2017-01-01",
+        "end": "2019-12-31 23:59:59"
+      },
+      "test": {
+        "start": "2020-01-01",
+        "end": "2023-08-10 23:59:59"
+      }
+    },
+    "cost_model": {
+      "cost_per_unit_turnover": 5e-05
+    },
+    "selection_policy": {
+      "screening_split": "train",
+      "calibration_split": "calibration",
+      "final_test_split": "test"
+    },
+    "protocol_name": "train_calibration_test_v1",
+    "description": "Fixed chronological split for the first honest futures strategy protocol."
+  },
+  "output_dir": "./data\\priority_groups_stat_arb_audit",
+  "frequency": "30min",
+  "markets_loaded": [
+    "A6",
+    "B6",
+    "CA",
+    "CC",
+    "CL",
+    "D6",
+    "DX",
+    "E6",
+    "GF",
+    "HE",
+    "HO",
+    "J6",
+    "KE",
+    "LE",
+    "LF",
+    "N6",
+    "NG",
+    "QA",
+    "RB",
+    "RS",
+    "S6",
+    "SB",
+    "SW",
+    "ZC",
+    "ZL",
+    "ZM",
+    "ZS",
+    "ZW"
+  ],
+  "priority_groups": {
+    "energy_cracks": {
+      "markets": [
+        "CL",
+        "RB",
+        "HO",
+        "NG"
+      ],
+      "pairs": [
+        [
+          "RB",
+          "CL"
+        ],
+        [
+          "HO",
+          "CL"
+        ],
+        [
+          "RB",
+          "HO"
+        ],
+        [
+          "NG",
+          "CL"
+        ]
+      ],
+      "baskets": [
+        [
+          "CL",
+          "RB",
+          "HO"
+        ]
+      ],
+      "mechanism": "crack spread (крэковый спред): нефть как вход, бензин/дистилляты как выход; NG слабее связан через энергоноситель и режимы."
+    },
+    "soy_crush_and_oilseeds": {
+      "markets": [
+        "ZS",
+        "ZM",
+        "ZL",
+        "RS"
+      ],
+      "pairs": [
+        [
+          "ZM",
+          "ZS"
+        ],
+        [
+          "ZL",
+          "ZS"
+        ],
+        [
+          "ZM",
+          "ZL"
+        ],
+        [
+          "RS",
+          "ZS"
+        ],
+        [
+          "RS",
+          "ZL"
+        ]
+      ],
+      "baskets": [
+        [
+          "ZS",
+          "ZM",
+          "ZL"
+        ],
+        [
+          "ZS",
+          "ZM",
+          "ZL",
+          "RS"
+        ]
+      ],
+      "mechanism": "soybean crush (соевый крэш): соя как вход, шрот и масло как выход; canola (рапс/канола) связан с растительными маслами."
+    },
+    "grain_complex": {
+      "markets": [
+        "ZC",
+        "ZS",
+        "ZW",
+        "KE"
+      ],
+      "pairs": [
+        [
+          "ZW",
+          "KE"
+        ],
+        [
+          "ZC",
+          "ZS"
+        ],
+        [
+          "ZC",
+          "ZW"
+        ],
+        [
+          "ZS",
+          "ZW"
+        ],
+        [
+          "KE",
+          "ZC"
+        ]
+      ],
+      "baskets": [
+        [
+          "ZC",
+          "ZS",
+          "ZW",
+          "KE"
+        ],
+        [
+          "ZW",
+          "KE"
+        ]
+      ],
+      "mechanism": "grain substitution (замещение зерновых): корм, посевные площади, погода, экспорт; пшеницы ZW/KE ближе всего."
+    },
+    "fx_usd_factor": {
+      "markets": [
+        "E6",
+        "B6",
+        "A6",
+        "N6",
+        "D6",
+        "J6",
+        "S6",
+        "DX"
+      ],
+      "pairs": [
+        [
+          "E6",
+          "B6"
+        ],
+        [
+          "A6",
+          "N6"
+        ],
+        [
+          "A6",
+          "D6"
+        ],
+        [
+          "J6",
+          "S6"
+        ],
+        [
+          "DX",
+          "E6"
+        ],
+        [
+          "DX",
+          "B6"
+        ],
+        [
+          "DX",
+          "A6"
+        ]
+      ],
+      "baskets": [
+        [
+          "E6",
+          "B6",
+          "A6",
+          "N6",
+          "D6",
+          "J6",
+          "S6"
+        ],
+        [
+          "DX",
+          "E6",
+          "B6",
+          "A6",
+          "N6",
+          "D6",
+          "J6",
+          "S6"
+        ]
+      ],
+      "mechanism": "USD factor (долларовый фактор): общая долларовая нога даёт корреляцию доходностей; коинтеграция уровней не гарантирована."
+    },
+    "livestock": {
+      "markets": [
+        "LE",
+        "GF",
+        "HE"
+      ],
+      "pairs": [
+        [
+          "LE",
+          "GF"
+        ],
+        [
+          "LE",
+          "HE"
+        ],
+        [
+          "GF",
+          "HE"
+        ]
+      ],
+      "baskets": [
+        [
+          "LE",
+          "GF",
+          "HE"
+        ]
+      ],
+      "mechanism": "cattle chain (цепочка КРС): feeder cattle (откормочный скот) -> live cattle (живой скот); hogs (свиньи) слабее, через мясной белок."
+    },
+    "softs_low_priority": {
+      "markets": [
+        "SB",
+        "CC"
+      ],
+      "pairs": [
+        [
+          "SB",
+          "CC"
+        ]
+      ],
+      "baskets": [
+        [
+          "SB",
+          "CC"
+        ]
+      ],
+      "mechanism": "soft commodities (мягкие товары): слабая общая инфляционная/сырьевая связь; низкий приоритет."
+    }
+  },
+  "sources_for_specs": [
+    "https://www.cmegroup.com/trading/why-futures/welcome-to-cme-fx-futures.html",
+    "https://www.cmegroup.com/markets/agriculture/livestock/lean-hogs.contractSpecs.html",
+    "https://extension.missouri.edu/publications/g601",
+    "https://www.barchart.com/futures/contract-specifications/meats",
+    "https://www.ice.com/agriculture/sugar",
+    "https://www.ampfutures.com/trading-info/contract-specifications",
+    "https://futures.tradingcharts.com/specs/"
+  ],
+  "saved_files": [
+    "00_manifest.json",
+    "00_protocol_splits.csv",
+    "01_contract_specs_and_multipliers.csv",
+    "02_priority_group_map.csv",
+    "03_loaded_active_series_meta.csv",
+    "04_active_close_panel_30min.parquet",
+    "05_panel_coverage_30min.csv",
+    "06_pair_statistics.csv",
+    "06a_pair_screening_fast.csv",
+    "06b_daily_stat_tests_after_screening.csv",
+    "06c_hourly_stat_tests_optional.csv",
+    "07_pair_figures.csv",
+    "08_corr_matrix_energy_cracks.csv",
+    "08_corr_matrix_fx_usd_factor.csv",
+    "08_corr_matrix_grain_complex.csv",
+    "08_corr_matrix_livestock.csv",
+    "08_corr_matrix_softs_low_priority.csv",
+    "08_corr_matrix_soy_crush_and_oilseeds.csv",
+    "09_pc1_loadings_energy_cracks.csv",
+    "09_pc1_loadings_fx_usd_factor.csv",
+    "09_pc1_loadings_grain_complex.csv",
+    "09_pc1_loadings_livestock.csv",
+    "09_pc1_loadings_softs_low_priority.csv",
+    "09_pc1_loadings_soy_crush_and_oilseeds.csv",
+    "10_group_statistics.csv",
+    "11_pair_leaderboard.csv",
+    "12_fast_two_layer_filter_stats.csv",
+    "12b_fast_two_layer_filter_split_stats.csv",
+    "13_fast_two_layer_filter_figures.csv",
+    "README.md",
+    "figures\\fast_filter_energy_cracks_HO_CL.png",
+    "figures\\fast_filter_energy_cracks_RB_CL.png",
+    "figures\\fast_filter_energy_cracks_RB_HO.png",
+    "figures\\fast_filter_fx_usd_factor_A6_D6.png",
+    "figures\\fast_filter_fx_usd_factor_DX_B6.png",
+    "figures\\fast_filter_fx_usd_factor_E6_B6.png",
+    "figures\\fast_filter_grain_complex_KE_ZC.png",
+    "figures\\fast_filter_grain_complex_ZC_ZS.png",
+    "figures\\fast_filter_grain_complex_ZC_ZW.png",
+    "figures\\fast_filter_grain_complex_ZW_KE.png",
+    "figures\\fast_filter_livestock_LE_GF.png",
+    "figures\\fast_filter_soy_crush_and_oilseeds_RS_ZS.png",
+    "figures\\fast_filter_soy_crush_and_oilseeds_ZL_ZS.png",
+    "figures\\fast_filter_soy_crush_and_oilseeds_ZM_ZS.png",
+    "figures\\group_corr_energy_cracks.png",
+    "figures\\group_corr_fx_usd_factor.png",
+    "figures\\group_corr_grain_complex.png",
+    "figures\\group_corr_livestock.png",
+    "figures\\group_corr_softs_low_priority.png",
+    "figures\\group_corr_soy_crush_and_oilseeds.png",
+    "figures\\pair_energy_cracks_HO_CL.png",
+    "figures\\pair_energy_cracks_RB_CL.png",
+    "figures\\pair_energy_cracks_RB_HO.png",
+    "figures\\pair_fx_usd_factor_A6_D6.png",
+    "figures\\pair_fx_usd_factor_A6_N6.png",
+    "figures\\pair_fx_usd_factor_DX_B6.png",
+    "figures\\pair_fx_usd_factor_DX_E6.png",
+    "figures\\pair_fx_usd_factor_E6_B6.png",
+    "figures\\pair_grain_complex_KE_ZC.png",
+    "figures\\pair_grain_complex_ZC_ZS.png",
+    "figures\\pair_grain_complex_ZC_ZW.png",
+    "figures\\pair_grain_complex_ZW_KE.png",
+    "figures\\pair_leaderboard.png",
+    "figures\\pair_livestock_LE_GF.png",
+    "figures\\pair_soy_crush_and_oilseeds_RS_ZL.png",
+    "figures\\pair_soy_crush_and_oilseeds_RS_ZS.png",
+    "figures\\pair_soy_crush_and_oilseeds_ZL_ZS.png",
+    "figures\\pair_soy_crush_and_oilseeds_ZM_ZS.png"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "folder": "D:\\Filter_2_option_v2\\final_result\\07_report_charts",
+  "n_charts": 29,
+  "order_file": "00_chart_order.csv",
+  "charts": [
+    {
+      "order": 1,
+      "file": "01_strategy_group_counts.png",
+      "role": "Сколько стратегий вошло в каждую группу"
+    },
+    {
+      "order": 2,
+      "file": "02_group_mean_test_pnl.png",
+      "role": "Средний результат групп на тесте"
+    },
+    {
+      "order": 3,
+      "file": "03_filter_group_heatmap.png",
+      "role": "Какие сочетания типа стратегии и фильтра дали лучший результат"
+    },
+    {
+      "order": 4,
+      "file": "04_top_instruments_total_pnl.png",
+      "role": "Лучшие инструменты и пары по суммарному результату"
+    },
+    {
+      "order": 5,
+      "file": "05_bottom_instruments_total_pnl.png",
+      "role": "Худшие инструменты и пары по суммарному результату"
+    },
+    {
+      "order": 6,
+      "file": "06_strategy_pnl_distribution.png",
+      "role": "Распределение результатов отдельных стратегий"
+    },
+    {
+      "order": 7,
+      "file": "07_strategy_pnl_vs_drawdown.png",
+      "role": "Связь доходности и просадки отдельных стратегий"
+    },
+    {
+      "order": 8,
+      "file": "08_all_portfolio_pnl.png",
+      "role": "Итоговый портфель: накопленный PnL"
+    },
+    {
+      "order": 9,
+      "file": "09_all_portfolio_drawdown.png",
+      "role": "Итоговый портфель: просадка"
+    },
+    {
+      "order": 10,
+      "file": "10_core_only_pnl.png",
+      "role": "Только самодостаточные базовые стратегии: PnL"
+    },
+    {
+      "order": 11,
+      "file": "11_core_only_drawdown.png",
+      "role": "Только самодостаточные базовые стратегии: просадка"
+    },
+    {
+      "order": 12,
+      "file": "12_two_option_only_pnl.png",
+      "role": "Только стратегии с двухслойным опционным фильтром: PnL"
+    },
+    {
+      "order": 13,
+      "file": "13_two_option_only_drawdown.png",
+      "role": "Только стратегии с двухслойным опционным фильтром: просадка"
+    },
+    {
+      "order": 14,
+      "file": "14_diagnostic_portfolio_total_pnl.png",
+      "role": "Сравнение прибыли диагностических портфелей"
+    },
+    {
+      "order": 15,
+      "file": "15_diagnostic_risk_return.png",
+      "role": "Сравнение риска и доходности диагностических портфелей"
+    },
+    {
+      "order": 16,
+      "file": "16_top_50_pnl.png",
+      "role": "Лучшие 50 стратегий: PnL"
+    },
+    {
+      "order": 17,
+      "file": "17_top_50_drawdown.png",
+      "role": "Лучшие 50 стратегий: просадка"
+    },
+    {
+      "order": 18,
+      "file": "18_top_100_pnl.png",
+      "role": "Лучшие 100 стратегий: PnL"
+    },
+    {
+      "order": 19,
+      "file": "19_top_100_drawdown.png",
+      "role": "Лучшие 100 стратегий: просадка"
+    },
+    {
+      "order": 20,
+      "file": "20_positive_only_pnl.png",
+      "role": "Только стратегии, положительные на тесте: PnL"
+    },
+    {
+      "order": 21,
+      "file": "21_positive_only_drawdown.png",
+      "role": "Только стратегии, положительные на тесте: просадка"
+    },
+    {
+      "order": 22,
+      "file": "22_robust_positive_pnl.png",
+      "role": "Устойчиво положительные стратегии: PnL"
+    },
+    {
+      "order": 23,
+      "file": "23_robust_positive_drawdown.png",
+      "role": "Устойчиво положительные стратегии: просадка"
+    },
+    {
+      "order": 24,
+      "file": "24_without_zs_rs_pnl.png",
+      "role": "Портфель без главной пары ZS/RS: PnL"
+    },
+    {
+      "order": 25,
+      "file": "25_without_zs_rs_drawdown.png",
+      "role": "Портфель без главной пары ZS/RS: просадка"
+    },
+    {
+      "order": 26,
+      "file": "26_return_on_capital.png",
+      "role": "Условная отдача на капитал при разных лимитах риска"
+    },
+    {
+      "order": 27,
+      "file": "27_final_overlay_vs_old_pnl.png",
+      "role": "Сравнение старого портфеля и портфеля с put overlay по PnL"
+    },
+    {
+      "order": 28,
+      "file": "28_final_overlay_vs_old_drawdown.png",
+      "role": "Сравнение старого портфеля и портфеля с put overlay по просадке"
+    },
+    {
+      "order": 29,
+      "file": "29_final_overlay_metric_comparison.png",
+      "role": "Сводное сравнение метрик put overlay"
+    }
+  ]
+}

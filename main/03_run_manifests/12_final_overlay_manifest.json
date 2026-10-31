@@ -1,0 +1,16 @@
+{
+  "test_start": "2020-01-01 00:00:00",
+  "test_end": "2023-08-10 23:59:59",
+  "n_strategies": 664,
+  "n_two_option": 236,
+  "n_core_put_overlay": 308,
+  "n_core_only": 120,
+  "n_errors": 0,
+  "old_portfolio_total": 213.90956556189184,
+  "new_portfolio_total": 205.23674527563145,
+  "plots": [
+    "D:\\Filter_2_option_v2\\12_final_overlay_test_output\\plots\\01_final_overlay_vs_old_pnl.png",
+    "D:\\Filter_2_option_v2\\12_final_overlay_test_output\\plots\\02_final_overlay_vs_old_drawdown.png"
+  ],
+  "output_dir": "D:\\Filter_2_option_v2\\12_final_overlay_test_output"
+}

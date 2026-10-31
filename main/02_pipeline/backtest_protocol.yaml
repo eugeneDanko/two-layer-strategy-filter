@@ -1,0 +1,23 @@
+protocol_name: train_calibration_test_v1
+description: Fixed chronological split for the first honest futures strategy protocol.
+
+splits:
+  train:
+    start: "2008-05-01"
+    end: "2016-12-31 23:59:59"
+  calibration:
+    start: "2017-01-01"
+    end: "2019-12-31 23:59:59"
+  test:
+    start: "2020-01-01"
+    end: "2023-08-10 23:59:59"
+
+cost_model:
+  # Cost is in strategy/spread PnL units per 1.0 absolute signal turnover.
+  # It is deliberately simple for the first protocol and should be stress-tested later.
+  cost_per_unit_turnover: 0.00005
+
+selection_policy:
+  screening_split: train
+  calibration_split: calibration
+  final_test_split: test

@@ -1,0 +1,30 @@
+﻿order,file,role
+1,01_strategy_group_counts.png,Сколько стратегий вошло в каждую группу
+2,02_group_mean_test_pnl.png,Средний результат групп на тесте
+3,03_filter_group_heatmap.png,Какие сочетания типа стратегии и фильтра дали лучший результат
+4,04_top_instruments_total_pnl.png,Лучшие инструменты и пары по суммарному результату
+5,05_bottom_instruments_total_pnl.png,Худшие инструменты и пары по суммарному результату
+6,06_strategy_pnl_distribution.png,Распределение результатов отдельных стратегий
+7,07_strategy_pnl_vs_drawdown.png,Связь доходности и просадки отдельных стратегий
+8,08_all_portfolio_pnl.png,Итоговый портфель: накопленный PnL
+9,09_all_portfolio_drawdown.png,Итоговый портфель: просадка
+10,10_core_only_pnl.png,Только самодостаточные базовые стратегии: PnL
+11,11_core_only_drawdown.png,Только самодостаточные базовые стратегии: просадка
+12,12_two_option_only_pnl.png,Только стратегии с двухслойным опционным фильтром: PnL
+13,13_two_option_only_drawdown.png,Только стратегии с двухслойным опционным фильтром: просадка
+14,14_diagnostic_portfolio_total_pnl.png,Сравнение прибыли диагностических портфелей
+15,15_diagnostic_risk_return.png,Сравнение риска и доходности диагностических портфелей
+16,16_top_50_pnl.png,Лучшие 50 стратегий: PnL
+17,17_top_50_drawdown.png,Лучшие 50 стратегий: просадка
+18,18_top_100_pnl.png,Лучшие 100 стратегий: PnL
+19,19_top_100_drawdown.png,Лучшие 100 стратегий: просадка
+20,20_positive_only_pnl.png,"Только стратегии, положительные на тесте: PnL"
+21,21_positive_only_drawdown.png,"Только стратегии, положительные на тесте: просадка"
+22,22_robust_positive_pnl.png,Устойчиво положительные стратегии: PnL
+23,23_robust_positive_drawdown.png,Устойчиво положительные стратегии: просадка
+24,24_without_zs_rs_pnl.png,Портфель без главной пары ZS/RS: PnL
+25,25_without_zs_rs_drawdown.png,Портфель без главной пары ZS/RS: просадка
+26,26_return_on_capital.png,Условная отдача на капитал при разных лимитах риска
+27,27_final_overlay_vs_old_pnl.png,Сравнение старого портфеля и портфеля с put overlay по PnL
+28,28_final_overlay_vs_old_drawdown.png,Сравнение старого портфеля и портфеля с put overlay по просадке
+29,29_final_overlay_metric_comparison.png,Сводное сравнение метрик put overlay

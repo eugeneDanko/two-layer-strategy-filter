@@ -1,0 +1,7 @@
+{
+  "n_input_strategies": 1636,
+  "n_ranked": 1636,
+  "n_selected_for_calibration": 827,
+  "select_fraction_per_group": 0.6,
+  "output_dir": "D:\\Filter_2_option_v2\\03_selection_leaderboard_output"
+}

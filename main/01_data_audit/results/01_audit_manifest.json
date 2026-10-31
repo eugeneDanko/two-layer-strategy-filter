@@ -1,0 +1,20 @@
+{
+  "source_file": "./data\\dfs_5min.pickle",
+  "source_size_bytes": 1458525408,
+  "audit_dir": "./data\\audit_dfs_5min",
+  "top_object_type": "dict",
+  "top_len": 35,
+  "dataframe_count": 35,
+  "total_rows_across_frames": 21169205,
+  "total_memory_mb_across_frames": 2382.2506046295166,
+  "saved_csv_files": [
+    "00_file_meta.csv",
+    "01_top_level_structure.csv",
+    "02_frames_summary.csv",
+    "03_column_dtypes_long.csv",
+    "04_column_frequency.csv",
+    "05_quality_summary.csv",
+    "06_price_column_candidates.csv",
+    "07_time_coverage.csv"
+  ]
+}

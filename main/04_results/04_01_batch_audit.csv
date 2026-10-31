@@ -1,0 +1,4 @@
+batch_label,grid_file_exists,best_file_exists,paths_file_exists,manifest_file_exists,grid_file_mb,best_file_mb,paths_file_mb,n_grid_rows,n_best_rows,n_path_rows,start_row,end_row_exclusive,n_selected_total,n_strategies,n_grid_rows_manifest,n_best_rows_manifest,n_best_paths_saved,batch_size,calibration_mode,manifest_file
+0000,True,True,True,True,11.425,0.046,0.012,20208,80,80,0,80,236,80,20208,80,80,80,fine,D:\Filter_2_option_v2\06_fine_tuning_output\batches\manifest_batch_0000.json
+0001,True,True,True,True,42.83,0.047,0.014,74352,80,80,80,160,236,80,74352,80,80,80,fine,D:\Filter_2_option_v2\06_fine_tuning_output\batches\manifest_batch_0001.json
+0002,True,True,True,True,50.143,0.044,0.013,87216,76,76,160,236,236,76,87216,76,76,80,fine,D:\Filter_2_option_v2\06_fine_tuning_output\batches\manifest_batch_0002.json

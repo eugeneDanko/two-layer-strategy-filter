@@ -1,0 +1,21 @@
+{
+  "keep_spec_ids": 664,
+  "delete_files": 1542,
+  "delete_size_gb": 3.99,
+  "core_paths_dir": "D:\\Filter_2_option_v2\\01_core_strategy_factory_output\\paths_selected",
+  "test_paths_dir": "D:\\Filter_2_option_v2\\08_test_run_output\\paths",
+  "execute": true,
+  "include_old_best_paths": true,
+  "deleted_files": 1542,
+  "deleted_size_gb": 3.99,
+  "failed_deletes": 0,
+  "output_dir": "D:\\Filter_2_option_v2\\10_cleanup_stale_paths_output",
+  "saved_files": [
+    "01_core_paths_audit.csv",
+    "02_delete_plan.csv",
+    "03_keep_spec_ids.csv",
+    "04_deleted_files.csv",
+    "05_delete_failures.csv",
+    "06_manifest.json"
+  ]
+}

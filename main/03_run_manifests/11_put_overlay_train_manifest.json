@@ -1,0 +1,17 @@
+{
+  "n_candidates": 428,
+  "n_grid_rows": 61632,
+  "n_best_rows": 428,
+  "n_errors": 0,
+  "n_missing_spec_ids": 0,
+  "output_dir": "D:\\Filter_2_option_v2\\11_core_put_overlay_train_output",
+  "saved_files": [
+    "01_put_overlay_train_grid.csv",
+    "02_put_overlay_train_best.csv",
+    "03_put_overlay_train_best_paths.csv",
+    "04_put_overlay_train_errors.csv",
+    "05_put_overlay_train_instrument_summary.csv",
+    "06_manifest.json",
+    "07_missing_spec_ids.csv"
+  ]
+}
